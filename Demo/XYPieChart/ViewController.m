@@ -45,7 +45,7 @@
     [self.pieChartLeft setAnimationSpeed:1.0];
     [self.pieChartLeft setLabelFont:[UIFont fontWithName:@"DBLCDTempBlack" size:24]];
     [self.pieChartLeft setLabelRadius:160];
-    [self.pieChartLeft setShowPercentage:YES];
+    [self.pieChartLeft setShowPercentage:NO];
     [self.pieChartLeft setPieBackgroundColor:[UIColor colorWithWhite:0.95 alpha:1]];
     [self.pieChartLeft setPieCenter:CGPointMake(240, 240)];
     [self.pieChartLeft setUserInteractionEnabled:NO];

@@ -466,6 +466,7 @@ static CGPathRef CGPathCreateArc(CGPoint center, CGFloat radius, CGFloat startAn
     }
     
     [_animations addObject:anim];
+    [self setAnimating:YES];
 }
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)animationCompleted
@@ -475,6 +476,7 @@ static CGPathRef CGPathCreateArc(CGPoint center, CGFloat radius, CGFloat startAn
     if ([_animations count] == 0) {
         [_animationTimer invalidate];
         _animationTimer = nil;
+        [self setAnimating:NO];
     }
 }
 
