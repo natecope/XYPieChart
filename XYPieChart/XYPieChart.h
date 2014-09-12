@@ -62,6 +62,7 @@
 @property(nonatomic, assign) CGFloat selectedSliceOffsetRadius;
 @property(nonatomic, assign) BOOL    showPercentage;
 @property(nonatomic, assign) BOOL    animating;
+@property(nonatomic, assign) BOOL    touchesEnabled;
 - (id)initWithFrame:(CGRect)frame Center:(CGPoint)center Radius:(CGFloat)radius;
 - (void)reloadData;
 - (void)setPieBackgroundColor:(UIColor *)color;
